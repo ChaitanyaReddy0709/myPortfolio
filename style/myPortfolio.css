@@ -1,0 +1,395 @@
+
+
+.navBar {
+	height: 70px;
+	display: flex;
+	color: aliceblue;
+	align-items: center;
+	padding: 0 20px;
+}
+
+.logo {
+	font-family: 'Bruno Ace SC';
+	flex: 4;
+	font-size: 22px;
+	background: none;
+	line-height: 1;
+}
+
+.navItems {
+	flex: 8;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.15);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.buttons {
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	transition: 0.4s;
+	padding: 3px 10px;
+	cursor: pointer;
+}
+
+.buttons:hover {
+	border-bottom: solid red 2px;
+}
+
+/* Responsive Navbar Toggle */
+.navbar-toggler {
+	background: rgba(255, 255, 255, 0.2);
+	border: none;
+}
+
+@media (max-width: 992px) {
+	.navItems {
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		top: 70px;
+		left: 0;
+		width: 100%;
+		background: rgba(255, 255, 255, 0.1);
+		backdrop-filter: blur(10px);
+		border-radius: 10px;
+		padding: 20px 0;
+	}
+	.navItems.show {
+		display: flex;
+	}
+	.navbar-toggler {
+		display: block;
+	}
+}
+@media (min-width : 992px) {
+	.navbar-toggler{
+		visibility:hidden
+	}
+}
+
+
+/* Home Container */
+.home {
+	height: 480px;
+	color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+	padding: 0 10%;
+}
+
+.home b {
+	font-size: 40px;
+}
+
+.home p {
+	font-size: 18px;
+}
+
+.p2 {
+	margin-left: 10px;
+}
+
+.p1 {
+	font-size: 18px;
+	display: flex;
+	justify-content: end;
+}
+
+.homePic1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.homePic1 img {
+	max-width: 100%;
+	height: auto;
+}
+
+@media (max-width: 992px) {
+	.home {
+		flex-direction: column;
+		text-align: center;
+		height: auto;
+		padding-top: 50px;
+	}
+}
+
+/* About Container */
+
+.c1 {
+    background-color: rgba(226, 134, 107, 0.9);
+    color: #ffffff;
+    margin-top: 150px;
+    padding: 30px 0;
+	height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.profilePic {
+    border-radius: 75px 0px;
+    max-width: 100%;
+    height: auto;
+}
+
+.c1 h1 {
+    color: #1b1b1b;
+    font-family: 'Times New Roman';
+}
+
+.about {
+    font-family: 'Times New Roman';
+    font-size: 18px;
+    line-height: 1.8;
+    color: #1b1b1b;
+    padding: 15px;
+}
+
+.icons i {
+    padding-left: 18px;
+    font-size: 20px;
+    color: #1b1b1b;
+    transition: 0.3s;
+}
+
+.icons a:hover i {
+    color: #2055f4;
+}
+
+.icons p {
+    color: #1b1b1b;
+    font-size: 16px;
+}
+.icons{
+	margin-top: 5px;
+	margin-left: 12px;
+}
+
+@media (max-width: 768px) {
+    .c1 {
+        height: auto;
+        padding: 50px 20px;
+    }
+    .profilePic img {
+        width: 250px;
+        height: auto;
+    }
+    .about {
+        font-size: 16px;
+    }
+    .icons p {
+        font-size: 14px;
+    }
+}
+
+
+/* Education Container */
+
+.edu{
+    margin-top: 150px;
+    color: #F64668;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.edu-details{
+    color: #ffffff;
+    margin-top: 10px;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.edu-details h{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.edu-details p{
+    font-size: 14px;
+}
+.ed { 
+    border: 3px solid rgba( 255, 255, 255, 0.18 );
+    height: auto;
+    padding: 40px 20px;
+    margin: 15px;
+    text-align: center;
+}
+.ed-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ed:hover{
+    background-color: rgba(226, 134, 107, 0.9);
+    color: #1b1b1b;
+    transition: 0.3s;
+}
+
+/* Skills Container */
+
+.skillset {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+/* Projects Container */
+.prdetails {
+    color: #ffffff;
+    padding-top: 50px;
+}
+
+/* Background */
+.probg {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 20px;
+}
+
+/* Responsive Project Image */
+.project-img {
+    width: 100%;
+    max-width: 225px;
+    height: auto;
+}
+
+/* Title Styling */
+.project-title {
+    font-size: 24px;
+}
+
+/* Project Description */
+.project-desc {
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+/* Additional Details */
+.project-details {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+/* Tools Used Section */
+.tools-used {
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    .prdetails {
+        padding-top: 20px;
+    }
+    .project-img {
+        max-width: 180px;
+    }
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #2A3950;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-info, .footer-social {
+    flex: 1;
+    max-width: 300px;
+}
+
+.footer h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: #FFD700;
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    font-size: 14px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+}
+
+/* Footer Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+    }
+}
+
+
+/* Arrow */
+.arrow i{
+	position: fixed; 
+	right: 15px; 
+	bottom: 15px; 
+	width:28px; 
+	height: 28px; 
+	border: 2px solid #F64668; 
+	color: #f0f8ff; 
+	font-size: 28px;
+}
+
+/* Responsive Arrow */
+@media (max-width : 768px){
+	.arrow i{
+		position: fixed; 
+		right: 10px; 
+		bottom: 10px; 
+		width:20px; 
+		height: 20px; 
+		border: 2px solid #F64668; 
+		color: #f0f8ff; 
+		font-size: 18px;
+	}
+}
+	
